@@ -4,11 +4,13 @@
 <tr>
     <td>Affinity</td>
     <td>Healthy</td>
+    <td>Error</td>
 </tr>
 {{#eachInMap status}}
 <tr>
     <td>{{value.affinity}}</td>
     <td>{{value.healthy}}</td>
+    <td>{{value.why}}</td>
 </tr>
 {{/eachInMap}}
 </table>
