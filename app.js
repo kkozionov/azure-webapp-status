@@ -14,7 +14,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.engine('hbs', handlebars.express4({
-	partialsDir: path.join('./', 'views')
+	partialsDir: path.join(path.normalize(__dirname), 'views')
 }));
 
 // uncomment after placing your favicon in /public
