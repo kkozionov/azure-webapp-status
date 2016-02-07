@@ -1,6 +1,9 @@
 {
   "name": "azure-webapp-status",
   "version": "0.0.1",
+  "engines": {
+    "node": "4.2.4"
+  },
   "private": true,
   "scripts": {
     "start": "node ./bin/www"

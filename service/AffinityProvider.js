@@ -45,5 +45,9 @@ var AffinityProvider = {
 	}
 };
 
+setTimeout(function () {
+	affinityMap = null;
+}, 60*1000);
+
 module.exports = AffinityProvider;
 
