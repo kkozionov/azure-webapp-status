@@ -1,0 +1,19 @@
+<h1>Azure WebApp status page: {{url}}</h1>
+
+<table border="1">
+<tr>
+    <td>Affinity</td>
+    <td>Healthy</td>
+    <td>Error</td>
+</tr>
+
+{{#eachInMap status}}
+<tr>
+    <td>{{value.affinity}}</td>
+    <td>{{value.healthy}}</td>
+    <td>{{value.why}}</td>
+</tr>
+{{/eachInMap}}
+</table>
+
+

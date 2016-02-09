@@ -1,18 +1,21 @@
-<h1>Azure WebApp status page: {{url}}</h1>
+<h1>Monitoring</h1>
 
 <table border="1">
 <tr>
-    <td>Affinity</td>
-    <td>Healthy</td>
-    <td>Error</td>
+    <td>Application</td>
+    <td>Interval (cron)</td>
+    <td>Link</td>
 </tr>
-{{#eachInMap status}}
+
+{{#each config.applications}}
 <tr>
-    <td>{{value.affinity}}</td>
-    <td>{{value.healthy}}</td>
-    <td>{{value.why}}</td>
+    <td>{{url}}</td>
+    <td>{{interval}}</td>
+    <td><a href="/{{name}}">{{name}}</a></td>
 </tr>
-{{/eachInMap}}
+{{/each}}
 </table>
+<br/>
+<span>Request timeout: {{config.timeout}}</span>
 
 

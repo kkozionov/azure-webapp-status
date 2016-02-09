@@ -68,4 +68,6 @@ handlebars.registerHelper('eachInMap', function ( map, block ) {
 	return out;
 } );
 
+
+require('./service/StatusWorker').start();
 module.exports = app;
